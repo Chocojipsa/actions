@@ -1,6 +1,6 @@
 async function makeIssue() {
     const token = process.env.GH_TOKEN;
-    const OWNER = "rbxo0128";
+    const OWNER = "Chocojipsa";
     const REPO = "actions";
     
     const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/issues`, {
@@ -22,3 +22,5 @@ async function makeIssue() {
         console.log("실패:", errorData);
     }
 }
+
+makeIssue();
